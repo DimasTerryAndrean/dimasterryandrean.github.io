@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bukti Pemesanan</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo-resto.jpeg" alt="Restaurant Logo" class="logo">
+            <h2>Bukti Pemesanan</h2>
+        </header>
+
+        <section class="info">
+            <table class="info-table">
+                <tr>
+                    <td>Nama Pelayan:</td>
+                    <td><strong>Dimas Terry Andrean</strong></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pemesanan:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Nama Pemesan:</td>
+                    <td><strong>Chandra</strong></td>
+                </tr>
+                <tr>
+                    <td>Alamat Pemesan:</td>
+                    <td><strong>Jl. Dayak Modang No.06</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Jumlah</th>
+                    <th>Harga Satuan</th>
+                    <th>Total Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="logo-nasi-goreng.jpeg" alt="Nasi Goreng Spesial" class="menu-img">
+                        Nasi Goreng Spesial
+                    </td>
+                    <td><input type="number" value="1"> Porsi</td>
+                    <td>Rp 25.000</td>
+                    <td>Rp 25.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="logo-es-teh-manis.jpeg" alt="Es Teh Manis" class="menu-img">
+                        Es Teh Manis
+                    </td>
+                    <td><input type="number" value="1"> Gelas</td>
+                    <td>Rp 5.000</td>
+                    <td>Rp 5.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total"><strong>Total Pesanan</strong></td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total"><strong>Pajak</strong></td>
+                    <td>Rp 2.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total"><strong>Total Tagihan</strong></td>
+                    <td>Rp 32.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="payment">
+            <h3>Metode Pembayaran:</h3>
+            <label><input type="radio" name="payment" id="bca"> Bank BCA</label>
+            <label><input type="radio" name="payment" id="bri"> Bank BRI</label>
+            <label><input type="radio" name="payment" id="ovo"> OVO</label>
+            <label><input type="radio" name="payment" id="gopay"> GoPay</label>
+        </section>
+
+        <footer>
+            <p><strong>Nama:</strong> Dimas Terry Andrean</p>
+            <p><strong>NIM:</strong> 2309106121</p>
+            <p><strong>Praktikum Web:</strong> <a href="https://link_to_posttest">Posttest 2</a></p>
+        </footer>
+    </div>
+</body>
+</html>
