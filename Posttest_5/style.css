@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #555;
+}
+
+.toggle-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.cta {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #e74c3c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #e74c3c;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero {
+    background-image: url('logo-beranda.jpg');
+    background-size: cover;
+    padding: 250px 20px;
+    text-align: center;
+    color: white;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 20px;
+}
+
+.car-item {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.car-item img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.contact-form {
+    padding: 20px;
+    background-color: #f7f7f7; 
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    color: #333; 
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; 
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e74c3c;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%; 
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#edit-form {
+    display: none; /* Form tersembunyi secara default */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
